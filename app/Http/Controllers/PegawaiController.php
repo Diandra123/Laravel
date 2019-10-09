@@ -20,6 +20,20 @@ class PegawaiController extends Controller
         $cari = $request->cari;
 
 
+    public function store(Request $request)
+    {
+
+        $message=[
+            'required'=> 'Harap isi bidang ini...'
+        ];
+
+    	$this->validate($request,[
+            'nama' => 'required',
+            'notelepon' => 'required|numeric',
+            'alamat' => 'required',
+            'email' => 'required'
+],$message);
+    
         $pegawai = DB::table('pegawai')
                     ->where('nama', 'like', "%{$request->cari}%")
                     ->orWhere('alamat', 'like', "%{$request->cari}%")

@@ -18,17 +18,20 @@
 
 <body>
     <div class="container" style="background:white;padding: 20px;border-radius: 15px;">
-        <h1 style="font-family: 'Times New Roman', Times, serif">Data Pengguna / User</h1>
+        <h1 style="font-family: 'Times New Roman', Times, serif">Data Penduduk / Warga Desa Sabandar</h1>
         <br />
-        <br />
-        <table class="table table-striped">
+        <form action="/pegawai/cari" method="GET">
+            <input type="text" name="cari" placeholder="SEARCH..." value="{{ old('cari') }}">
+            <input type="submit" value="CARI">
+        </form>
+        <table class="table table-striped" style="">
             <thead>
-                <tr style="background:yellow">
+                <tr style="background:yellow;">
                     <th>Nama</th>
                     <th>No Telepon</th>
                     <th>Alamat</th>
                     <th>Email</th>
-                    <th>OPSI</th>
+                    <th style="text-align: center">OPSI</th>
                 </tr>
             </thead>
             <tbody>
@@ -39,13 +42,15 @@
                     <td>{{ $p->alamat }}</td>
                     <td>{{ $p->email }}</td>
                     <td>
-                        <a href="/pegawai/edit/{{ $p->id }}" class="btn btn-success">Ubah</a>
+                        <center>
+                            <a href="/pegawai/edit/{{ $p->id }}" class="btn btn-success">Ubah</a>
+                        </center>
                     </td>
                 </tr>
                 @endforeach
             </tbody>
         </table>
-        <a href="/pegawai/tambah" class="btn btn-primary">Tambah Pengguna Baru</a>
+        <a href="/pegawai/tambah" class="btn btn-primary">Tambahkan Penduduk Baru</a>
     </div>
 </body>
 

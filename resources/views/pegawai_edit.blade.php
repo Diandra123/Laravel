@@ -25,9 +25,9 @@
 
 <body>
     <div class="container" style="background:white;padding: 20px;border-radius: 15px;">
-        <div class="card mt-5">
+        <div class="card mt-4">
             <div class="card-header text-center">
-                <strong style="font-family: 'Times New Roman', Times, serif">UBAH DATA PENGGUNA / USER</strong>
+                <h2 style="font-family: 'Times New Roman', Times, serif">Ubah Data Penduduk</h2>
             </div>
             <div class="card-body">
                 <br />
