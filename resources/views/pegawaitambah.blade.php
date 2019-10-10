@@ -17,7 +17,7 @@
             float: left;
         }
 
-        .btn-success {
+        .btn-outline-success {
             float: right;
         }
 
@@ -83,8 +83,8 @@
                     </div>
 
                     <div class="form-group">
-                        <input type="submit" class="btn btn-success" value="Simpan">
-                        <a href="/pegawai" class="btn btn-primary">kembali</a>
+                        <input type="submit" class="btn btn-outline-success" value="Simpan">
+                        <a href="/pegawai" class="btn btn-outline-primary">kembali</a>
                     </div>
 
                 </form>
