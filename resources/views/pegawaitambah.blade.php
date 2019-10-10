@@ -28,7 +28,7 @@
     <div class="container" style="background:white;padding: 20px;border-radius: 15px;">
         <div class="card mt-4">
             <div class="card-header text-center">
-                <h2 style="font-family: 'Times New Roman', Times, serif;">Tambahkan Data Penduduk</h2>
+                <h2 style="font-family: 'Times New Roman', Times, serif;">Tambahkan Data Pengguna</h2>
             </div>
             <div class="card-body">
                 <br />
@@ -84,7 +84,7 @@
 
                     <div class="form-group">
                         <input type="submit" class="btn btn-outline-success" value="Simpan">
-                        <a href="/pegawai" class="btn btn-outline-primary">kembali</a>
+                        <a href="/pegawai" class="btn btn-warning">kembali</a>
                     </div>
 
                 </form>

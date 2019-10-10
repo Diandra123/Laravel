@@ -19,9 +19,9 @@ Route::get('/pegawai', 'PegawaiController@index');
 
 Route::get('/pegawai/tambah', 'PegawaiController@tambah');
 
-Route::get('/pegawai/cari', 'PegawaiController@cari');
-
 Route::post('/pegawai/store', 'PegawaiController@store');
+
+Route::get('/pegawai/cari', 'PegawaiController@cari');
 
 Route::get('/pegawai/edit/{id}', 'PegawaiController@edit');
 

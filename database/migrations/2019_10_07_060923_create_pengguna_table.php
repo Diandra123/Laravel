@@ -13,10 +13,10 @@ class CreatePenggunaTable extends Migration
      */
     public function up()
     {
-        Schema::create('pengguna', function (Blueprint $table) {
+        Schema::create('pegawai', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nama');
-            $table->string('no-telepon');
+            $table->string('notelepon');
             $table->text('alamat');
             $table->text('email');
             $table->timestamps();
