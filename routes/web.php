@@ -22,6 +22,7 @@ Route::get('/siswa/hapus/{id}','SiswaController@hapus');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/siswa/{sort}', 'SiswaController@index');
 
 
 
