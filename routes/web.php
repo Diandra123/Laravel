@@ -15,19 +15,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/siswa','SiswaController@index');
+Route::get('/pegawai','PegawaiController@index');
 
-Route::get('/siswa/hapus/{id}','SiswaController@hapus');
+Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
 
 Route::post('/pegawai/store', 'PegawaiController@store');
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/pegawai/tambah', 'PegawaiController@tambah');
 
 Route::get('/pegawai/cari', 'PegawaiController@cari');
 
 Route::get('/pegawai/edit/{id}', 'PegawaiController@edit');
 
+Route::put('/pegawai/update/{id}','PegawaiController@update');
 
+Route::get('/pegawai/{sort}', 'PegawaiController@index');
 
 
