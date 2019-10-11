@@ -21,7 +21,12 @@ Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
 
 Route::post('/pegawai/store', 'PegawaiController@store');
 
+<<<<<<< HEAD
 Route::get('/pegawai/tambah', 'PegawaiController@tambah');
+=======
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/siswa/{sort}', 'SiswaController@index');
+>>>>>>> master
 
 Route::get('/pegawai/cari', 'PegawaiController@cari');
 

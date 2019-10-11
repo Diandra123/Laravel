@@ -25,12 +25,17 @@
 			<th style="color: white;" >NO TLPN</th>
 			<th style="color: white;" >ALAMAT</th>
 			<th style="color: white;" >EMAIL</th>
-            <th style="color: white;" >TANGGAL DAFTAR
-			<button>
-			<i class="fa fa-sort-asc" aria-hidden="true"></i>
-			</button>
-			<button><i class="fa fa-sort-desc" aria-hidden="true"></i>
-</button>
+			<th style="color: white;" >TANGGAL DAFTAR
+				@if($sort == 'asc')
+				<a href="/siswa">
+					&nbsp;<i  style="color:white; text-decoration: none;" class="fa fa-sort-asc" aria-hidden="true"></i>
+				</a>
+				@else($sort == 'desc')
+				<a href="/siswa/asc">
+					&nbsp;<i  style="color:white; text-decoration: none;"class="fa fa-sort-desc" aria-hidden="true"></i></a>
+				 @endif
+			
+			
 			</th>
             <th style="color: white;" >OPSI</th>
             
