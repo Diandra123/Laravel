@@ -40,7 +40,7 @@
 
                     <div class="form-group">
                         <label>Nama</label>
-                        <input type="text" name="nama" class="form-control" placeholder="Nama pengguna ..">
+                        <input type="text" name="nama" class="form-control" placeholder="Nama pengguna .." value="{{ old('nama') }}">
 
                         @if($errors->has('nama'))
                         <div class="text-danger">
@@ -51,7 +51,7 @@
 
                     <div class="form-group">
                         <label>No Telepon</label>
-                        <input type="text" name="notelepon" class="form-control" placeholder="No Telepon Anda ..">
+                        <input type="text" name="notelepon" class="form-control" placeholder="No Telepon Anda .." value="{{ old('notelepon') }}">
 
                         @if($errors->has('notelepon'))
                         <div class="text-danger">
@@ -62,7 +62,7 @@
 
                     <div class="form-group">
                         <label>Alamat</label>
-                        <textarea name="alamat" class="form-control" placeholder="Alamat pengguna .."></textarea>
+                        <textarea name="alamat" class="form-control" placeholder="Alamat pengguna ..">{{ old('alamat') }}</textarea>
 
                         @if($errors->has('alamat'))
                         <div class="text-danger">
@@ -73,7 +73,7 @@
 
                     <div class="form-group">
                         <label>Email</label>
-                        <input type="email" name="email" class="form-control" placeholder="Isikan email anda..">
+                        <input type="email" name="email" class="form-control" placeholder="Isikan email anda.." value="{{ old('email') }}">
 
                         @if($errors->has('email'))
                         <div class="text-danger">
