@@ -24,7 +24,7 @@
     <div class="container-fluid" style="background:white;padding: 20px;border-radius: 15px;">
         <h1 style="font-family: 'Times New Roman', Times, serif">Data Pengguna</h1> <br>
         <table>
-            <form class="cari" action="/pegawai/cari" method="GET">
+            <form class="cari" action="/pegawai" method="GET">
                 <input class="btn btn-outline-primary" type="text" name="cari" placeholder="SEARCH..."
                     value="{{ old('cari') }}">
                 <button type="submit" class="btn btn-outline-secondary"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -60,7 +60,7 @@
         <br />
         <table border="2" class="table table-striped" style="border-radius: 10px;">
             <thead>
-                <tr style="background:yellow;">
+                <tr style="background: lightblue;">
                     <th>No</th>
                     <th>Nama</th>
                     <th>No Telepon</th>
@@ -68,10 +68,10 @@
                     <th>Email</th>
                     <th>Tanggal Dibuat
                         &nbsp;
-                        @if($sort == 'desc')
-                        <a href="/pegawai/asc"><i style="color: black;" class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
-                        @else($sort == 'asc')
-                        <a href="/pegawai"><i style="color: black;" class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+                        @if($sort == 'asc')
+                        <a href="/pegawai/desc?cari={{ $cari }}"><i style="color: black;" class="fa fa-sort-asc" aria-hidden="true"></i></a>
+                        @else($sort == 'desc')
+                        <a href="/pegawai/asc?cari={{ $cari }}"><i style="color: black;" class="fa fa-sort-desc" aria-hidden="true"></i></a>
                         @endif
                     </th>
                     <th style="text-align: center">OPSI</th>
